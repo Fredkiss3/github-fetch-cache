@@ -16,7 +16,7 @@ export const generateStaticParams = () => {
 export const generateMetadata = async ({ params: { slug } }: any) => {
   console.log('HEAD: How many times I render', slug);
   console.log('HEAD: got value from external api : ');
-  console.dir(use(callExternalAPI(slug)), { depth: null });
+  console.dir(await callExternalAPI(slug), { depth: null });
 
   return {
     title: slug,
