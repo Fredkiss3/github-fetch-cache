@@ -1,7 +1,7 @@
 import { callExternalAPI } from '@/app/lib/external-api';
 import { use } from 'react';
 
-// export const fetchCache = 'force-no-store';
+export const fetchCache = 'force-no-store';
 
 const Page = () => {
   console.log('BODY: How many times I render Static Page');
